@@ -6,19 +6,22 @@
   "extends": [
     "airbnb-typescript/base",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
     "no-plusplus": "off",
+    "@typescript-eslint/no-var-requires": 0,
     "no-console": "warn",
-    "max-len": ["warn", { "code": 120 }],
+    "max-len": ["warn", { "code": 80 }],
     "indent": ["warn", 2, {
       "SwitchCase": 1
     }],
